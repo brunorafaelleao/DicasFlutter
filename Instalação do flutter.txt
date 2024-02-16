@@ -1,0 +1,37 @@
+##instalação do flutter no windows e configuração do android studio:
+1) acessar o site flutter.io
+- localizar o get started e ao ser direcionado pra página de download,
+localizar o botão com a versão do flutter estável.
+2) Arquivo baixado, localizar e descompactar.
+- Após descompactar o arquivo, será necessário salvar a pasta do flutter
+no drive c. Salvar na pasta do usuário que usará o flutter. Exemplo:
+C:\Users\Usuario\dev (onde Usuario é o nome do usuário developer)
+
+3) Abrir a pasta flutter e acessar a pasta bin (que está dentro de flutter).
+- ao abrir a pasta bin, copiar o endereço dela (deve estar ao menos assim: C:\Users\Usuario\dev\flutter\bin)
+4) Depois de copiar o endereço configurar o flutter em variáveis de ambiente
+- isso é feito para que se consiga acessar o flutter de qualquer local sem precisar abrir a pasta bin.
+5) abrir propriedades de meu computador e localizar configurações avançadas do sistema
+- após clicar em configurações avançadas do sistema, abrirá uma janela de propriedades do sistema
+- localizar a opção variáveis de ambiente
+- abrirá uma nova tela. Atenção pois se pode configurar apenas para um usuário ou todos os usuários.
+para todos usuários, configurar em variáveis do sistema. Se para apenas um usuário, usar a opção que aparece
+o usuário atual.
+- escolhendo para quem vai configurar o flutter, selecionar a variável Path. Clicar nela e depois selecionar o botão
+editar. Depois de abrir a nova janela, selecionar o botão novo
+- colar a linha do bin do flutter e depois clicar em ok
+6) feito todos os passos, variável de ambiente configurada para o flutter.
+7) Para verificar se está tudo ok com a instalação
+- acessar o prompt de comando e digitar flutter. 
+- deverá ser exibido código e uma mensagem de "welcome to flutter"
+- ainda em prompt de comando, digitar flutter doctor e depois pressionar enter.
+- mostrará quais as configurações estão realizadas
+
+##configuração no android studio
+1) instalar o android studio conforme orientações do fabricante.
+2) Abrir o android studio
+- após abrir o AS localizar a opção plugins
+- pesquisar o plugin DART (das opções apresentadas selecionar a que mostrar languages ou programming
+language) e instalar.
+- depois de instalar o DART, pesquisar o plugin flutter (das opções apresentadas selecionar a que mostrar
+languages ou programming language) e instalar.
