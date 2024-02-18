@@ -1,0 +1,136 @@
+Dicas de Dart
+
+- Declarando variáveis:
+1) pode ser usado a palavra 'var' seguido do nome da variável e
+depois '=' para atribuir o valor
+ex: var nome = 'Bruno'
+
+- Declarando constantes:
+1) pode ser usado a palavra "const" seguido do nome da constante e
+depois '=' para atribuir o valor
+ex: const pi = 3.14
+
+obs: sempre usar ; para finalizar uma linha de comando.
+
+- Para exibir ou imprimir os valores, usar "print".
+ex: print(nome);
+
+- Para imprimir um nome ou string mais uma variável usar o
+caracter "$"
+ex: print("O nome é $nome")
+
+- Outros tipos de variáveis:
+String nome = "Bruno" //cadeia de caracteres
+int numero = 50 //numero inteiro
+double preco = 19.99; //valor decimal
+bool acesso = true //valor verdadeiro para o exemplo, mas pode ser false. ou true ou false
+
+- Operadores relacionais:
+1) "<" menor que
+2) ">" maior que
+3) "==" igual a
+4) "<=" menor ou igual a
+5) ">=" maior ou igual a
+6) "!=" diferente
+
+- Operadores lógicos
+&& "e"
+||"ou"
+
+- If e Else
+Ex: se media de aluno >=6 aprovado
+
+void main(){
+  var med = 5.8;
+  if (med>=6){
+  print ("Aprovado");
+}else{
+  print ("Reprovado");
+}
+}
+Obs: O resultado será reprovado, pois 5.8 não é maior ou igual a 6
+
+- Uso de switch
+Ex: Dado uma variável comando, verificar duas situações:
+se o valor for "depositar", exibir na tela: Deposite um valor
+se o valor for "sacar" exibir na tela: Fazer um saque.
+diferente das duas opções acima, exibir: nenhuma opção válida selecionada
+
+void main(){
+  var comando = "corrigir";
+  
+  switch (comando){
+    case "depositar":
+      print("Deposite um valor");
+      break;
+    case "sacar":
+      print("Fazer um saque");
+      break;
+    default :
+      print("Nenhuma opção válida selecionada");
+  
+  }
+}
+
+Obs: O resultado será "Nenhuma opção válida selecionada", pois a variável está declarada
+com o valor "corrigir"
+
+-Uso de while
+Ex:
+void main() {
+//declaração do valor da variável
+  var num = 5;
+/*a leitura da sintaxe é: enquanto num for maior ou
+  igual a 1, imprima a palavra + o valor de num.
+  depois de imprimir subtraia o 1 do valor de num e verifica
+  se ele ainda é maior ou igual a 1. Se for, imprima a palavra +
+  o novo valor de num*/
+while(num >= 1){
+  print("Executado $num");
+  num -=1;
+}
+}
+
+- Uso de for
+void main() {
+/* Para usar o for, a sintaxe funcionou assim:
+ declarou a variável e dentro da estrutura do for se fez:
+ para num, se num for menor ou igual a 5, incrementa 1 mas antes imprima o valor de num e só depois incrementa.
+Após incrementar refaça a leitura do for*/
+  var num = 1;
+  
+  for(num;num<=5;num++){
+    print("Número $num");
+  }
+}
+
+Obs: um outro exemplo de for:
+void main() {
+/* Declara uma variável array e depois usa o for com a seguinte sintaxe:
+para uma variável post dentro de posts, imprima uma string onde cada item da array
+receberá a frase e será um novo valor da variável post do for*/
+  var posts = [
+    "Karol",
+    "Chiara",
+    "Bruno"
+  ];
+  
+  for(var post in posts){
+    print ("O nome é $post");
+  }
+}
+
+- Uso de "do while"
+void main (){
+  //declarou a varíave e atribuiu o valor 1
+  var num = 1;
+  /*faça a impressão de uma combinação de uma string
+   com a variável num e depois de imprimir uma primeira vez
+   incrementa o valor com +1 e refaz a impressão com o novo valor
+   e continua incrementando enquanto o valor de num for menor
+   ou igual a 5*/
+ do{
+   print ("Número $num");
+   num++;
+ }while(num<=5);
+}
