@@ -134,3 +134,16 @@ void main (){
    num++;
  }while(num<=5);
 }
+
+- Funções:
+ex1: Criar uma função que exiba uma mensagem de texto.
+void exibirMensagem(){
+  print("Bruno Rafael");
+}
+/*essa função segue uma estrutura parecida com algumas outras funções
+já existentes */
+void main (){
+exibirMensagem(); //chamada da função
+}
+/*Nesse caso específico, a função foi inserida dentro da função principal
+e ao executar o código ela irá mostrar a mensagem: Bruno Rafael
