@@ -147,3 +147,19 @@ exibirMensagem(); //chamada da função
 }
 /*Nesse caso específico, a função foi inserida dentro da função principal
 e ao executar o código ela irá mostrar a mensagem: Bruno Rafael
+
+ex2: Uma função para calcular salário:
+double calcularsalario(double salario){
+  double total = salario - (salario*0.1);
+  return total;
+  //print("salario total: $total ");
+}
+
+void main (){
+double bonus = 500;
+double resultado = calcularsalario(1000);
+double total = resultado + bonus;
+print("O salário total é $total");
+  
+  
+}
