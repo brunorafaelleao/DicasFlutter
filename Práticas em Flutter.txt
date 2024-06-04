@@ -1,0 +1,8 @@
+1) iniciando um projeto:
+- Ao abrir o arquivo  main.dart, mudar o script inciando com
+void main()
+
+runApp(MaterialApp())
+
+2) Para retirar a expressão "debug" do layout do app no emulador:
+-Digitar dentro do MaterialApp: debugShowCheckedModeBanner: false
