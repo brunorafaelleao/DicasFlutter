@@ -1,8 +1,40 @@
 1) iniciando um projeto:
 - Ao abrir o arquivo  main.dart, mudar o script inciando com
-void main()
+void main(){
 
 runApp(MaterialApp())
+}
 
 2) Para retirar a expressão "debug" do layout do app no emulador:
 -Digitar dentro do MaterialApp: debugShowCheckedModeBanner: false
+
+3) Dica de uso de um modelo ou esqueleto para layout em Flutter:
+- Scaffold. 
+- Digitar dentro do MaterialApp(home: Scaffold(
+obs: Ele possui uma opção para appBar, body (que é o corpo do layout) e bottomNavigationBar
+ex: void main(){
+
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Instagram", style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blueGrey,
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(40),
+        child: Text("Conteúdo principal"),
+      ),
+
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.green,
+        child: Text("Bruno Rafael", style: TextStyle(color: Colors.black),),
+      ),
+
+    ),
+
+
+
+  )
+ );
+}
