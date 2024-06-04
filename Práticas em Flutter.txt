@@ -12,7 +12,8 @@ runApp(MaterialApp())
 - Scaffold. 
 - Digitar dentro do MaterialApp(home: Scaffold(
 obs: Ele possui uma opção para appBar, body (que é o corpo do layout) e bottomNavigationBar
-ex: void main(){
+ex:
+void main(){
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -25,16 +26,15 @@ ex: void main(){
         padding: EdgeInsets.all(40),
         child: Text("Conteúdo principal"),
       ),
-
       bottomNavigationBar: BottomAppBar(
         color: Colors.green,
         child: Text("Bruno Rafael", style: TextStyle(color: Colors.black),),
       ),
-
     ),
-
-
-
   )
  );
 }
+
+4) Uso de um Widget Stateless & Stateful
+- Stateless (widget que não pode ser alterado -> constante)
+- Statefull (widget que pode ser alterado -> variável)
