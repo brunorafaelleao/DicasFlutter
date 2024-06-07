@@ -38,3 +38,13 @@ void main(){
 4) Uso de um Widget Stateless & Stateful
 - Stateless (widget que não pode ser alterado -> constante)
 - Statefull (widget que pode ser alterado -> variável)
+
+5) Inserir imagens em projeto Flutter
+-> Alterar a exibição das pastas do projeto para Project
+--> Na parte que aparece o nome do projeto, clicar com o borão direito, opção new, depois directory e nomear a pasta com titulo: imagens
+---> Copiar as imagens da pasta do computador e colar na pasta imagens criada em project
+----> Abrir o arquivo pubspec.yaml e localizar a parte que está flutter: uses-material-design: true
+-----> Seguir as regras do próprio arquivo para usar as imagens. Após a linha do uses-material-design, digitar:
+assets: -images/nomedaimagem.extensão (Depois de digitar essa linha, clicar em pub get)
+------> Após esse procedimento, no arquivo .dart do layout colocar a imagem
+ex: child: Image.asset("imagens/nomearquivo.extensão")
