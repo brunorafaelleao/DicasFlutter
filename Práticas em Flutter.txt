@@ -46,5 +46,11 @@ void main(){
 ----> Abrir o arquivo pubspec.yaml e localizar a parte que está flutter: uses-material-design: true
 -----> Seguir as regras do próprio arquivo para usar as imagens. Após a linha do uses-material-design, digitar:
 assets: -images/nomedaimagem.extensão (Depois de digitar essa linha, clicar em pub get)
+Obs: Para mais de uma imagem, seguir o exemplo:
+  assets:
+    - imagens/padrao.png
+    - imagens/papel.png
+    - imagens/pedra.png
+    - imagens/tesoura.png
 ------> Após esse procedimento, no arquivo .dart do layout colocar a imagem
 ex: child: Image.asset("imagens/nomearquivo.extensão")
