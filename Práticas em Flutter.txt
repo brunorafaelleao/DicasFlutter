@@ -54,3 +54,19 @@ Obs: Para mais de uma imagem, seguir o exemplo:
     - imagens/tesoura.png
 ------> Após esse procedimento, no arquivo .dart do layout colocar a imagem
 ex: child: Image.asset("imagens/nomearquivo.extensão")
+
+6) Preenchimento e espaçamentos de widgets.
+Exemplo:
+body: Container(
+      padding: EdgeInsets.all(28),
+      child: Column(
+        children: <Widget> [
+          Padding(padding: EdgeInsets.only(bottom: 32),
+          child: Image.asset("imagens/logo.png"),
+          ),//Padding da imagem
+          Padding(padding: EdgeInsets.only(top: 15),
+              child: Text("Saiba qual a melhor opção para abastecimento do seu carro")
+          ),//padding do texto          
+        ],//final dos widgets
+      ),//final da coluna
+    )//final container  
