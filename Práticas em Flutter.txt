@@ -70,3 +70,9 @@ body: Container(
         ],//final dos widgets
       ),//final da coluna
     )//final container  
+
+7) Exemplo de formatação de textos
+-> Text("texto", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),)
+para trocar a cor do texto ==> style: TextStyle(color: Colors.white)
+para colocar em negrito ==> style: TextStyle(fontWeight: FontWeight.bold)
+para alterar o tamanho da fonte ==>  style: TextStyle(fontSize: 18)
