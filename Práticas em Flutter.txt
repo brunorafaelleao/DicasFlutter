@@ -77,3 +77,16 @@ para trocar a cor do texto ==> style: TextStyle(color: Colors.white)
 para colocar em negrito ==> style: TextStyle(fontWeight: FontWeight.bold)
 para alterar o tamanho da fonte ==>  style: TextStyle(fontSize: 18)
 para centralizar o texto ==> textAlign: TextAlign.center
+
+8) Uso de ScrollView
+-> Uma dica para o uso de ScrollView é usá-lo dentro de um Container.
+Segue exemplo de um SrollView que foi inserido dentro de um "body" em uma estrutura Scaffold
+body: Container(
+      child: SingleChildScrollView(
+
+9) Uso de checkbox
+-> CheckboxListTile(
+	title: Text("texto do checkbox"),
+	subtitle: Text("texto alternativo"),
+	activeColor: Colors.red,)
+
