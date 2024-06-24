@@ -90,3 +90,29 @@ body: Container(
 	subtitle: Text("texto alternativo"),
 	activeColor: Colors.red,)
 
+10) RadioButton (widget para marcar apenas uma opção)
+-> Uma dica é colocá-lo dentro de uma row
+RadioListTile(
+ title: Text("Masculino"),
+   value 1,
+   gruopValue: _escolhaUsuario,
+   onChanged: (int escolha){
+   setState((){
+     _escolhaUsuario = escolha); 
+    });
+  }
+),
+
+11) Switch
+-> Depois de State<NomeDaClasse>{
+bool _escolhaUsuario = false;
+
+-> SwitchListTile(
+    title: Text("Receber notificações?"),
+     value: _escolhaUsuario,
+     onChanged: (bool valor){
+      setState((){
+      _ecolhaUsuario = valor;
+      });
+   }
+ )
