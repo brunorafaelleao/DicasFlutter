@@ -116,3 +116,25 @@ bool _escolhaUsuario = false;
       });
    }
  )
+
+12) Inserindo colunas
+->No caso das colunas, podemos usar dentro de um body e é importante ressaltar que
+ao inserir uma coluna ela pede um elemento children com uma lista. Obs: A parte generics <Widget> é opcional
+--> Column(
+children: <Widget> [
+
+]
+),
+
+13)Navegação entre telas
+-> Usar a Classe Navigator: Navigator.push ou Navigator.pop
+--> push abre uma tela e o pop fecha a atual e abre a nova
+Ex: Podemos inserir um botão e no onPressed desse botão colocar a classe
+RaisedButton(
+child: Text("Ir pra outra tela"),
+onPressed: (){
+ Navigator.push(context,
+                 MaterialPageRoute(builder: (context)=> TelaSecundaria();   //context: Em qual tela estou? a route é pra onde quero ir
+}
+)
+
