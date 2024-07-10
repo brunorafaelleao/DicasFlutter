@@ -138,3 +138,17 @@ onPressed: (){
 }
 )
 
+14) Trocar a imagem do ícone do app
+Para alterar o ícone do aplicativo no Flutter, você precisa substituir os ícones padrão nas pastas específicas do sistema operacional do dispositivo (Android e iOS). Aqui está um passo a passo detalhado:  
+Android
+Gerar Ícones: Primeiro, crie seu ícone em diferentes tamanhos para suportar diferentes densidades de tela. Você pode usar ferramentas online como o "App Icon Maker" para gerar esses ícones.
+Substituir Ícones: Navegue até android/app/src/main/res. Aqui, você encontrará várias pastas começando com mipmap- seguidas de um identificador de densidade de tela (por exemplo, mipmap-hdpi, mipmap-mdpi). Substitua os ícones existentes nessas pastas pelos seus ícones correspondentes.
+Atualizar AndroidManifest.xml: Certifique-se de que o AndroidManifest.xml está apontando para o ícone correto com a tag <application android:icon="@mipmap/ic_launcher">.
+iOS
+Gerar Ícones: Assim como para Android, crie seu ícone em diferentes tamanhos para suportar diferentes dispositivos iOS.
+Substituir Ícones: Abra o projeto iOS no Xcode (ios/Runner.xcworkspace). No navegador de projetos, selecione Assets.xcassets. Localize o conjunto de ícones do aplicativo chamado AppIcon. Arraste e solte seus ícones nos slots correspondentes.
+Verificar Configurações: Certifique-se de que o conjunto de ícones do aplicativo está corretamente configurado nas configurações do seu projeto no Xcode.
+Dica
+Para facilitar o processo, você pode usar o pacote flutter_launcher_icons no Flutter. Adicione o pacote ao seu pubspec.yaml e configure os caminhos para seus ícones. Depois, execute flutter pub run flutter_launcher_icons:main para atualizar automaticamente os ícones em ambas as plataformas.
+
+
