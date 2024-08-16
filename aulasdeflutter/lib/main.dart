@@ -11,9 +11,14 @@ class PerguntaApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      home: Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+         title: Text('Aplicativo'),
+        ),
+        body: Text('Dengue'),
+      )
+      //Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
     );
   }
-
-
 }
