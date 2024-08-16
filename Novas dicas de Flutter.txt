@@ -59,3 +59,40 @@ desenhados na tela
 -Layout e controle (Row, Column(), ListView())
 Obs: Temos também o Container() que pode ser invisível para agrupar Widgets mas também
 visível quando colocamos formatos a ele.
+
+5) Usando Colunas (Column) para organizar Widgets
+-> Vamos usar o Widget Column dentro do body do Scaffold.
+ex1:
+body Column(
+//ele vai receber um atributo children que vai receber uma lista [] de Widgets <Widget>
+//Não é obrigatório colocar o elemento generics <Widget>
+children: <Widget> [
+]
+)
+ex2:
+class PerguntaApp extends StatelessWidget{
+
+  //Método build vai retornar o widget
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+         title: Text('Perguntas', style: TextStyle(fontSize: 22, color: Colors.white),),
+        ),
+        body: Column(
+          children: <Widget> [
+            Text('Linha 1'),
+            Text('Linha 2'),
+            Text('Linha 3'),
+
+          ],
+        )
+      )
+      //Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
+    );
+  }
+}
+
+6) 
