@@ -50,3 +50,12 @@ class PerguntaApp extends StatelessWidget{
     );
   }
 }
+
+4) Diferentes tipos de Widgets:
+-> Visíveis: O que vemos exibido/desenhado na tela
+-Entradas e Saídas (RaisedButton(), Text, Card())
+-> Invisíveis: O que prover a estrutura do App e controla como os widgets visíveis são
+desenhados na tela
+-Layout e controle (Row, Column(), ListView())
+Obs: Temos também o Container() que pode ser invisível para agrupar Widgets mas também
+visível quando colocamos formatos a ele.

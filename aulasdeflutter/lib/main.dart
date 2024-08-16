@@ -16,7 +16,7 @@ class PerguntaApp extends StatelessWidget{
           backgroundColor: Colors.blue,
          title: Text('Aplicativo'),
         ),
-        body: Text('Dengue'),
+        body: Text('Projetos'),
       )
       //Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
     );
