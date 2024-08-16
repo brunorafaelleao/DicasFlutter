@@ -95,4 +95,36 @@ class PerguntaApp extends StatelessWidget{
   }
 }
 
-6) 
+6) Inserir um botão
+-> Um Widget de botão é o ElevatedButton
+ex: O texto entra como elemento child desse widget e o método de pressionar
+é onPressed
+//inserir botões para respostas
+            ElevatedButton(
+              child: Text('Resposta 1'),
+              onPressed: null,
+            ),ElevatedButton(
+              child: Text('Resposta 2'),
+              onPressed: null,
+            ),ElevatedButton(
+              child: Text('Resposta 3'),
+              onPressed: null,
+            ),
+-> Para colocar uma função ou habilitar o método/evento onPressed:
+a) Podemos criar uma função e depois chamá-la no onPressed:
+void resposta (){ print('Resposta clicada') }
+ElevatedButton(
+              child: Text('Resposta 3'),
+              onPressed: resposta,
+obs: Não passar resposta() a não ser se vc disser que resposta() faz parte de uma outra função que
+retorna uma função ex: void function() responder(){ return(){print('Respondida') } }
+
+b) Podemos passar o evento dentro da própria estrutura do onPressed
+ex:
+onPressed: (){
+                print('Resposta 3 foi selecionada');
+              },
+
+c) Podemos passar como uma função anônima usando arrow:
+ex:
+onPressed: ()=> print('Resposta 2 foi selecionada'),

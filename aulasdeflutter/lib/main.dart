@@ -10,11 +10,17 @@ class PerguntaApp extends StatelessWidget{
   //Método build vai retornar o widget
   @override
   Widget build(BuildContext context){
+    //perguntas
     final List<String> perguntas = [
       'Qual é a sua cor favorita?',
       'Qual é o seu animal favorito?',
     ];
+    //funções
+    void responder(){
+      print('Pergunta respondida');
+    }
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
@@ -23,15 +29,20 @@ class PerguntaApp extends StatelessWidget{
         body: Column(
           children: <Widget> [
             Text(perguntas[1]),
+            //inserir botões para respostas
             ElevatedButton(
               child: Text('Resposta 1'),
-              onPressed: null,
-            ),ElevatedButton(
+              onPressed: responder,
+            ),
+            ElevatedButton(
               child: Text('Resposta 2'),
-              onPressed: null,
-            ),ElevatedButton(
+              onPressed: ()=> print('Resposta 2 foi selecionada'),
+            ),
+            ElevatedButton(
               child: Text('Resposta 3'),
-              onPressed: null,
+              onPressed: (){
+                print('Resposta 3 foi selecionada');
+              },
             ),
           ],
         )
