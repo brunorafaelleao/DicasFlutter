@@ -1,0 +1,52 @@
+1) Início do projeto
+-> Depois de iniciar o projeto flutter,
+localizar o arquivo main.dart
+-> Abrir o arquivo e excluir as anotações presentes
+
+2) Iniciando a activity:
+-> Toda activity inicia com a função main(){ } e depois entre chaves
+inserimos a função para rodar o widget runApp() e dentro dela colocamos
+a nossa classe. A nossa classe deixamos no próprio arquivo e criamos usando
+class NomeDaClasse que extendemos de uma classe de widget que é a StatelessWidget
+ex:
+import 'package:flutter/material.dart';
+
+main(){
+runApp(PerguntaApp());
+}
+
+class PerguntaApp extends StatelessWidget{
+
+  //Método build vai retornar o widget
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
+    );
+  }
+}
+
+3) Árvore de componentes:
+-> Scaffold = é uma estrutura em Flutter que usamos para inserir dentro dela nossos
+componentes (widgets).
+Seguindo o exemplo anterior:
+o retorno da nossa Classe traz um MaterialApp que tem como atributos um Scaffold que
+traz outros atributos: appBar, body.
+ex:
+class PerguntaApp extends StatelessWidget{
+
+  //Método build vai retornar o widget
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+         title: Text('Aplicativo'),
+        ),
+        body: Text('Bruno'),
+      )
+      //Text('Bruno', style: TextStyle(fontSize: 60, color: Colors.blue),),
+    );
+  }
+}
