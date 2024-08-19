@@ -128,3 +128,7 @@ onPressed: (){
 c) Podemos passar como uma função anônima usando arrow:
 ex:
 onPressed: ()=> print('Resposta 2 foi selecionada'),
+
+7) Diferença entre Stateless e Stateful
+-> Stateless: Renderiza a UI (dados podem mudar externamente)
+-> Stateful :Renderuza a UI e os dados mudam
